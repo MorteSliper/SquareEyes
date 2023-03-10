@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Roboto Slab', serif
+}
+
+body {
+    background-color: #2e2e2e;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav li {
+    display: inline-block
+    
+}
+nav li {
+    padding: 10px;
+}
+
+nav ul {
+    padding: 0px;
+}
