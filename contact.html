@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bcac029f5.js" crossorigin="anonymous"></script>
+    <title>Square Eyes</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul class="header">
+            <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="square eyes logo" class="logo"/></a>
+            <div class="search-bar">
+                <button class="search-bar-submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" class="search-bar-input" placeholder="search" aria-label="search">
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user fa-xl" aria-label="user icon"></i>
+                <i class="fa-solid fa-cart-shopping fa-xl"  aria-label="shopping cart"></i>
+            </div>
+        </ul>
+    </nav>
+    
+</header> 
+    <main>
+        <form action="form-success.php" method="post">
+            <p>Hi! Do you need to talk to us about something on Square eyes. Send us a message with the card on the right.</p>
+            <fieldset>
+                <h1>Contact us</h1> 
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form__input" required> 
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="email" id="email" class="form__input" required>
+                <label for="message">Message</label>
+                <textarea type="message" name="message" id="message" class="form__input" style="height: 5em;" required></textarea>
+                <input class="btn" type="submit" value="Send">
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer-grid">
+      <div class="footer-social">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+          <i class="fa-brands fa-instagram fa-xl"></i>
+          <i class="fa-brands fa-twitter fa-xl"></i>
+      </div>
+      <p class=" footer-logo">
+          <a href="index.html"><img src="images/SquareEyes_Logo_footer.png" alt="logo"></a>
+          Copyright &copy; 2022 Square Eyes
+      </p>
+      <div class="footer-link">
+          <a href="Contact.html">Contact</a>
+          <a href="About.html">about</a>
+      </div> 
+  </footer>
+</body>

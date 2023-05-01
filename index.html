@@ -8,65 +8,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bcac029f5.js" crossorigin="anonymous"></script>
     <title>Square Eyes</title>
 </head>
-<body>
+
+<body class="container">
     <header>
         <nav>
-            <ul>
-             
+            <ul class="header">
+                <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="square eyes logo" class="logo"/></a>
+                <div class="search-bar">
+                    <button class="search-bar-submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="search-bar-input" placeholder="search" aria-label="search">
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-user fa-xl" aria-label="user icon"></i>
+                    <i class="fa-solid fa-cart-shopping fa-xl"  aria-label="shopping cart"></i>
+                </div>
             </ul>
         </nav>
-        <img src="logo.jpg" alt="square eyes logo" /> 
+        
     </header> 
-    <h1>WATCH THE LATEST FILMS ON SQUARE EYES</h1>
-        <P>Latest films</P> 
-    <main>
-        <nav>
-            <ul>
-                <li>Independent</li>
-                <li>Family</li>
-                <li>Sci-fi</li>
-                <li>Comedy</li>
-                <li>Action</li>
-                <li>Drama</li>
-                <li>Thriller</li>
-                <li>Fantasy</li>
-            </ul>
-        </nav>
+    <main>   
+        <section class="hero">
+            <h1>WATCH THE LATEST FILMS ON SQUARE EYES</h1>
+            <a href="list_of_films.html">
+                <button class="btn">Latest films</button>
+            </a>
+        </section>
 
-        <h2>Continue watching</h2> 
-            <ul>
-                <li>Adams Family halloween</li>
-                <li>Toy story 4</li>
-                <li>Hobbs & Shaw</li>
-                <li>Godzilla king of monsters</li>
-            </ul>
-        <h3>For you</h3>
-            <ul>
-                <li>Adams Family halloween</li>
-                <li>Toy story 4</li>
-                <li>Hobbs & Shaw</li>
-                <li>Godzilla king of monsters</li>
-            </ul>
-        <h4>My list</h4>
-            
-            <ul>
-                <li>Adams Family halloween</li>
-                <li>Toy story 4</li>
-                <li>Hobbs & Shaw</li>
-                <li>Godzilla king of monsters</li>
-            </ul>
+        <section class="category">  
+            <button class="category-element">Sci-fi</button>
+            <button class="category-element">Comedy</button>
+            <button class="category-element">Action</button>
+            <button class="category-element">Drama</button>
+            <button class="category-element">Thriller</button>
+            <button class="category-element">Fantasy</button>  
+            <button class="category-element">Independent</button>
+            <button class="category-element">Family</button>          
+        </section>
+
+        <h2>Continue watching</h2>
+            <section class="film-selection">
+                <div class="films">
+                    <img src="images/adams family 2.jpg" alt="The adams family halloween">
+                    <p>The adams family halloween</p>
+                </div>                
+                <div class="films">
+                    <img src="images/toy story 4 2.jpg" alt="Toy story 4">
+                    <p>Toy story 4</p>
+                </div>
+                <div class="films">
+                    <img src="images/batman 2.jpg" alt="Batman">
+                    <p>Batman</p>
+                </div>
+                <div class="films">
+                    <img src="images/godzilla 2.jpg" alt="Godzilla king of monsters">
+                    <p>Godzilla king of monsters</p>
+                </div>
+            </section>
+        <h2>For you</h2>
+        <section class="film-selection">
+            <div class="films">
+                <img src="images/adams family 2.jpg" alt="The adams family halloween">
+                <p>The adams family halloween</p>
+            </div>                
+            <div class="films">
+                <img src="images/toy story 4 2.jpg" alt="Toy story 4">
+                <p>Toy story 4</p>
+            </div>
+            <div class="films">
+                <img src="images/batman 2.jpg" alt="Batman">
+                <p>Batman</p>
+            </div>
+            <div class="films">
+                <img src="images/godzilla 2.jpg" alt="Godzilla king of monsters">
+                <p>Godzilla king of monsters</p>
+            </div>
+        </section>
+        <h2>My list</h2>   
+        <section class="film-selection">
+            <div class="films">
+                <img src="images/adams family 2.jpg" alt="The adams family halloween">
+                <p>The adams family halloween</p>
+            </div>                
+            <div class="films">
+                <img src="images/toy story 4 2.jpg" alt="Toy story 4">
+                <p>Toy story 4</p>
+            </div>
+            <div class="films">
+                <img src="images/batman 2.jpg" alt="Batman">
+                <p>Batman</p>
+            </div>
+            <div class="films">
+                <img src="images/godzilla 2.jpg" alt="Godzilla king of monsters">
+                <p>Godzilla king of monsters</p>
+            </div>
+        </section>
     </main>
-    <footer>
-        Copyright &copy; 2022 Square Eyes
-        <ul>
-            <li>Facebook icon</li>
-            <li>Instagram icon</li>
-            <li>Twitter icon</li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="About.html">about</a></li>
-        </ul>
+
+    <footer class="footer-grid">
+        <div class="footer-social">
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-twitter fa-xl"></i>
+        </div>
+        <p class=" footer-logo">
+            <a href="index.html"><img src="images/SquareEyes_Logo_footer.png" alt="logo"></a>
+            Copyright &copy; 2022 Square Eyes
+        </p>
+        <div class="footer-link">
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">about</a>
+        </div> 
     </footer>
 </body>
 </html>
