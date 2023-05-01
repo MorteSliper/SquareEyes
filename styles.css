@@ -318,10 +318,15 @@ p{
    line-height: 1.5;
 }
 
+.order-summary p:nth-child(3){
+    text-decoration: underline;
+}
+
 .product-card i {
     padding-right: 2em;
     padding-bottom: 2em;
     padding-top: 1.5em;
+    color: #fff;
 }
 
 @media(max-width: 600px){
