@@ -370,11 +370,12 @@ p{
 
 .header-about{
     text-align: center;
+    margin: 15px;
 }
 .about-grid{
     display: grid;
     gap: 15px;
-    grid-template-rows: repeat(3 1fr);
+    grid-auto-flow: row;
     justify-items: center;
 }
 
@@ -382,9 +383,10 @@ p{
 .about-grid p{
     background-color: rgba(44, 59, 44, 0.9);
     min-height: 10em;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 1rem;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 /*contact*/
