@@ -11,6 +11,7 @@ body {
 }
 
 button,
+a,
 input,
 textarea,
 select {
@@ -32,6 +33,10 @@ img:hover{
 }
 li{
     list-style-type: none;
+}
+
+h1{
+    padding-bottom: 20px;
 }
 h2{
     color: #fff;
@@ -165,7 +170,9 @@ p{
 
 .hero { 
     background-image: url(images/Header-felix-mooneeram-evlkOfkQ5rE-crop.jpg);
+    height: 30vh;
     font-family: 'Roboto Slab', serif;
+    font-size: 2.6rem;
     color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -175,21 +182,32 @@ p{
     text-align: center;
 } 
 
-
+@media (max-width: 600px){
+    .hero{
+        height: 20vh;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}
 
 .btn{
     background-color: rgba(234, 118, 32, 1);
+    display: flex;
+    justify-content: center;
+    margin: auto;
     margin-top: 10px;
     width: 252px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Nunito', sans-serif;
+    font-weight: 600;
     padding: 10px 20px;
     color: black;
     border-radius: 10px;
     border: none;
     outline: none;
     cursor: pointer;
-    font-weight: 600
+    text-decoration: none;
+    box-shadow: 1px 1px 10px  black;
 }
 
 @media (max-width: 600px) {
@@ -281,6 +299,7 @@ p{
 
 .product-card{
     display: grid;
+    justify-items: center;
     gap: 1em;
     grid-template-columns: repeat(2, 1fr);
     background-color: rgba(44, 59, 44, 0.95);
@@ -309,8 +328,10 @@ p{
 
 .order-summary {
    display: grid;
+   margin: auto;
    background-color:rgba(204, 204, 204, 1) ;
    font-size: 1.2rem;
+   color: #000;
    border-radius: 10px;
    padding: 10px 20px;
    margin-bottom: 2em;
@@ -340,6 +361,9 @@ p{
     }
     .product-card i{
         font-size: 1.3rem;
+    }
+    .order-summary{
+        margin-bottom: 10px;
     }
 }
 
@@ -377,8 +401,13 @@ p{
     gap: 15px;
     grid-auto-flow: row;
     justify-items: center;
+    margin: auto;
 }
 
+.about-grid img{
+    cursor: initial;
+    transform: none;
+}
 
 .about-grid p{
     background-color: rgba(44, 59, 44, 0.9);
@@ -387,6 +416,35 @@ p{
     font-weight: 600;
     padding: 1rem;
     max-width: 500px;
+    border-radius: 10px;
+}
+
+.achivments-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    justify-items: center;
+    margin: 50px auto;
+
+}
+
+.achivments-card{
+    display: flex;
+    background: rgba(44, 59, 44, 0.9);
+    font-size: 2rem;
+    font-weight: 600;
+    width: 305px;
+    height:305px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 600px){
+    .achivments-card p{
+        font-size: 2rem;
+        font-weight: 600;
+    }
 }
 
 /*contact*/
@@ -447,6 +505,7 @@ form p{
     background-color: rgba(231, 231, 231, 1);
     align-items: center;
     justify-items: center;
+    margin-top: 20px;
 }
 
 .footer-link{

@@ -13,24 +13,21 @@
 </head>
 <body class="container">
     <header>
-        <nav>
-            <ul class="header">
+        <nav class="header">
                 <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="square eyes logo" class="logo"/></a>
                 <div class="search-bar">
-                    <button class="search-bar-submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" class="search-bar-input" placeholder="search" aria-label="search">
+                    <button class="search-bar-submit"><i class="fa-sharp fa-solid fa-magnifying-glass" role="button" aria-label="search button" ></i></button>
+                    <input type="text" class="search-bar-input" placeholder="search" role="textbox" aria-label="search input">
                 </div>
                 <div class="icon">
-                    <i class="fa-solid fa-user fa-xl" aria-label="user icon"></i>
-                    <i class="fa-solid fa-cart-shopping fa-xl"  aria-label="shopping cart"></i>
+                    <i class="fa-solid fa-user fa-xl" role="navigation" aria-label="user icon"></i>
+                    <i class="fa-solid fa-cart-shopping fa-xl" role="navigation" aria-label="shopping cart"></i>
                 </div>
-            </ul>
-        </nav>
-        
+            </nav>
     </header> 
     <main class="list-of-films">  
         <h1>Latest films</h1>
-        <select class="dropdown">
+        <select class="dropdown" aria-label="option">
             <option>Latest films</option>
             <option>Sci-fi</option>
             <option>Comedy</option>
