@@ -182,10 +182,14 @@ p{
     text-align: center;
 } 
 
+@media (max-width: 800px){
+    .hero{
+        font-size: 2rem;
+    }
+}
 @media (max-width: 600px){
     .hero{
-        height: 20vh;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         font-weight: 400;
     }
 }
@@ -380,15 +384,22 @@ p{
 
 .checkout-success-card{
     display: grid;
-    grid-template-columns: 11em;
+    grid-template-columns: 25rem;
     justify-content: center;
     justify-items: center;
+    height: 400px;
 }
 
 .checkout-success-card i{
     padding-top: 2em;
 }
 
+/* @media(max-width: 600px){
+    .checkout-success-card{
+        background-image: radial-gradient(circle, #00811c 1%, #2c3b2c 60%);
+        size: closest-side;
+    }
+} */
 
 /*about*/
 
