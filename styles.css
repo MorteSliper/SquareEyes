@@ -1,12 +1,24 @@
 /*global style*/
 
+:root {
+    --font-size-p: 1rem;
+
+    --second-clr: rgba(92, 72, 194, 1);
+    --bg-clr: #2e2e2e;
+    --success-clr: rgba(44, 59, 44, 1);
+    --button-clr: rgba(234, 118, 32, 1);
+    --font-clr: #f3f3f3;
+    --footer-clr: rgba(231, 231, 231, 1);
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
-    background-color: #2e2e2e;
+    background-color: var(--bg-clr);
     font-family: 'Nunito', sans-serif;
 }
 
@@ -20,7 +32,7 @@ select {
 }
 
 main{
-    color: #fff;
+    color: var(--font-clr);
     min-height: 100vh;
 }
 
@@ -40,12 +52,12 @@ h1{
     padding-bottom: 20px;
 }
 h2{
-    color: #fff;
+    color: var(--font-clr);
     padding: 10px;
 }
 
 a{
-    color: black;
+    color: var(--bg-clr);
 }
 
 a:hover{
@@ -61,7 +73,7 @@ p{
 /*header styles*/
 
 .header {
-    background-color: rgba(92, 72, 194, 1);
+    background-color: var(--second-clr);
     display: grid;
     grid-template-columns: 161px 1fr 1fr;
     align-items: center;
@@ -114,7 +126,7 @@ p{
 
 .search-bar{
     size: 40px;
-    border: 2px solid #2e2e2e;
+    border: 2px solid var(--bg-clr);
     display: flex;
     border-radius: 100vh;
     height: 40px;
@@ -130,7 +142,7 @@ p{
     padding: 0 0.5rem;
     border: 0;
     position: absolute;
-    background: rgba(231, 231, 231, 1);
+    background: var(--footer-clr);
     top: 0;
     bottom: 0;
     left: 0;
@@ -157,13 +169,13 @@ p{
 }
 .search-bar:focus-within{
     width: 100%;
-    background: rgba(231, 231, 231, 1);
+    background: var(--footer-clr);
 }
 
 .search-bar-input:focus-within{
     opacity: 1;
     cursor: initial;
-    background: rgba(231, 231, 231, 1);
+    background: var(--footer-clr);
     width: 90%
 } 
 
@@ -173,7 +185,7 @@ p{
     background-image: url(images/Header-felix-mooneeram-evlkOfkQ5rE-crop.jpg);
     font-family: 'Roboto Slab', serif;
     font-size: 2.6rem;
-    color: #fff;
+    color: var(--font-clr);
     padding-top: 50px;
     padding-bottom: 50px;
     background-size: cover;
@@ -196,7 +208,7 @@ p{
 }
 
 .btn{
-    background-color: rgba(234, 118, 32, 1);
+    background-color: var(--button-clr);
     display: flex;
     justify-content: center;
     margin: auto;
@@ -206,7 +218,7 @@ p{
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     padding: 10px 20px;
-    color: black;
+    color: var(--bg-clr);
     border-radius: 10px;
     border: none;
     outline: none;
@@ -233,13 +245,13 @@ p{
     gap: 15px;
     padding: 0%;
     grid-auto-flow: column;
-    grid-auto-columns: 20%;
+    grid-auto-columns: 22%;
     overflow-x: auto;
     margin: 15px 10px;
     min-height: 62px;
 }
 .category-element{
-    background-color: rgba(92, 72, 194, 1);
+    background-color: var(--second-clr);
     font-size: 1.3rem;
     color: #fff;
     border-radius: 10px;
@@ -258,7 +270,7 @@ p{
         min-height: 2.8em;
     }
     .category-element{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
 }
@@ -275,7 +287,7 @@ p{
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     gap: 10px;
-    color: #fff; 
+    color: var(--font-clr); 
     margin:0px 10px 50px 10px; 
 }
 
@@ -299,7 +311,7 @@ p{
     font-size: 1.5rem;
     border-radius: 10px;
     padding: 5px;
-    color: #fff;
+    color: var(--font-clr);
 }
 
 /*product details*/
@@ -337,9 +349,9 @@ p{
 .order-summary {
    display: grid;
    margin: auto;
-   background-color:rgba(204, 204, 204, 1) ;
+   background-color: var(--footer-clr) ;
    font-size: 1.2rem;
-   color: #000;
+   color: var(--bg-clr);
    border-radius: 10px;
    padding: 10px 20px;
    margin-bottom: 2em;
@@ -355,7 +367,7 @@ p{
     padding-right: 2em;
     padding-bottom: 2em;
     padding-top: 1.5em;
-    color: #fff;
+    color: var(--font-clr);
 }
 
 @media(max-width: 600px){
@@ -378,7 +390,7 @@ p{
 /*checkout success*/
 
 .checkout-success-body{
-    background-color: rgba(44, 59, 44, 1);
+    background-color: var(--success-clr);
 
 }
 .checkout-success{
@@ -397,15 +409,6 @@ p{
 .checkout-success-card i{
     padding-top: 2em;
 }
-
-/* @media(max-width: 600px){
-    .checkout-success-card{
-        background-image: radial-gradient(circle, #00811c 1%, #2c3b2c 60%);
-        size: closest-side;
-    }
-} */
-
-/*about*/
 
 .header-about{
     text-align: center;
@@ -470,8 +473,8 @@ fieldset{
 }
 
 form{
-    background-color: #fff;
-    color: black;
+    background-color: var(--font-clr);
+    color: var(--bg-clr);
     max-width: 500px;
     margin: auto;
     margin-top: 50px;
@@ -496,7 +499,7 @@ fieldset h1{
 }
 
 .form__input{
-    background-color: rgba(217, 217, 217, 1);
+    background-color: var(--footer-clr);
     border-color: transparent;
     min-width: 100%;
     border-radius: 5px;
@@ -504,7 +507,7 @@ fieldset h1{
 }
 
 form p{
-    background-color: rgba(44, 59, 44, 1);
+    background-color: var(--success-clr);
     padding: 10px;
     margin-bottom: 0%;
     border-radius: 10px;
@@ -517,7 +520,7 @@ form p{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr ;
-    background-color: rgba(231, 231, 231, 1);
+    background-color: var(--footer-clr);
     align-items: center;
     justify-items: center;
     margin-top: 20px;
@@ -539,7 +542,7 @@ form p{
 .footer-logo{
     display:grid;
     gap: 1em;
-    font-size: 0.8rem;
+    font-size: 1rem;
     justify-items: center;
     padding-top: 10px;
 }
@@ -563,7 +566,5 @@ form p{
      }
 }
 
-  /*mobile styles*/
-/*@media only screen and (max-width: 480px) {
 
 }
