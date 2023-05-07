@@ -170,7 +170,7 @@ p{
 
 .hero { 
     background-image: url(images/Header-felix-mooneeram-evlkOfkQ5rE-crop.jpg);
-    height: 30vh;
+    height: 40vh;
     font-family: 'Roboto Slab', serif;
     font-size: 2.6rem;
     color: #fff;
@@ -189,6 +189,7 @@ p{
 }
 @media (max-width: 600px){
     .hero{
+
         font-size: 1.2rem;
         font-weight: 400;
     }
