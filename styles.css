@@ -238,7 +238,6 @@ p{
     margin: 15px 10px;
     min-height: 62px;
 }
-
 .category-element{
     background-color: rgba(92, 72, 194, 1);
     font-size: 1.3rem;
@@ -247,6 +246,10 @@ p{
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
 }
 
 @media (max-width: 600px) {
