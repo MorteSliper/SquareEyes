@@ -338,6 +338,10 @@ p{
 .product-name{
     grid-column: span 2;
 }
+.card-img:hover {
+    transform: none;
+    cursor: initial;
+}
 
 @media(max-width: 600px){
     .product-name{
@@ -407,7 +411,7 @@ p{
 }
 
 .checkout-success-card i{
-    padding-top: 2em;
+    padding-top: 2rem;
 }
 
 .header-about{
@@ -420,11 +424,6 @@ p{
     grid-auto-flow: row;
     justify-items: center;
     margin: auto;
-}
-
-.about-grid img{
-    cursor: initial;
-    transform: none;
 }
 
 .about-grid p{
@@ -456,13 +455,6 @@ p{
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-}
-
-@media(max-width: 600px){
-    .achivments-card p{
-        font-size: 2rem;
-        font-weight: 600;
-    }
 }
 
 /*contact*/
@@ -503,7 +495,7 @@ fieldset h1{
     border-color: transparent;
     min-width: 100%;
     border-radius: 5px;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 form p{
@@ -542,7 +534,6 @@ form p{
 .footer-logo{
     display:grid;
     gap: 1em;
-    font-size: 1rem;
     justify-items: center;
     padding-top: 10px;
 }
@@ -564,7 +555,4 @@ form p{
         "link"
         "social";
      }
-}
-
-
 }
