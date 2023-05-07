@@ -475,6 +475,11 @@ form{
     border-radius: 10px
 
 }
+legend{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
 
 @media(max-width: 600px){
     form{
