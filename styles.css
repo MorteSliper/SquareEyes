@@ -459,6 +459,10 @@ p{
 
 /*contact*/
 
+.contact-h1{
+    text-align: center;
+}
+
 fieldset{
     border-style: none;
     
